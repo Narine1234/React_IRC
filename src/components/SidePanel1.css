@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+}
+
+main {
+    /* width: 100%; */
+    margin-top: 0px;
+}
+
+.sidebar {
+    background: #000;
+    color: #fff;
+    height: 100%;
+    width: 200px;
+    transition: all 0.5s;
+    position: fixed;
+    left: 0; /* Stick to the left */
+    z-index: 1000; /* Set a high z-index to overlap everything */
+    margin-top: -40px;
+}
+
+.top_section {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+}
+
+.logo {
+    font-size: 30px;
+}
+
+.bars {
+    display: flex;
+    font-size: 25px;
+}
+
+.link {
+    display: flex;
+    color: #fff;
+    padding: 10px 15px;
+    gap: 15px;
+    transition: all 0.5s;
+}
+
+.link:hover {
+    background: lightskyblue;
+    color: #000;
+    transition: all 0.5s;
+}
+
+.active {
+    background: lightskyblue;
+    color: #000;
+}
+
+.icon,
+.link_text {
+    font-size: 20px;
+}
