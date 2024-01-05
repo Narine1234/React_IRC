@@ -1,0 +1,693 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+
+.App {
+  text-align: center;
+}
+/* Navbar */
+/* Add this to your CSS file */
+/* App.css */
+.logo-container {
+  display: flex;
+  align-items: center;
+  margin-right: 10px; /* Adjust the margin as needed */
+}
+
+.logo {
+  width: 50px; /* Adjust the width of the logo as needed */
+  height: auto;
+}
+
+.title {
+  margin-left: 10px; /* Adjust the margin as needed */
+}
+
+
+  
+.active{
+  background-color: #1d4ed8;
+}
+
+
+.nav{
+  width: 100%;
+  position: fixed;
+
+
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0f172a;
+  color: white;
+  top: 0px;
+  z-index: 1000;
+  height: 60px;
+  
+}
+
+nav .title {
+  font-size: 1.5rem;
+  margin: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+ list-style: none; 
+}
+
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem;
+  margin: 0 0.5rem;
+  border-radius: 0.5rem;
+}
+
+nav ul li a:not(.active):hover {
+  background-color:#172554 ;
+}
+
+nav .menu {
+  display: none;
+  position: fixed;
+  top: 0.75rem;
+  right: 0.5rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 2.25rem;
+  height: 2rem;
+}
+
+nav .menu span {
+  height: 0.4rem;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 0.2rem;
+}
+
+
+@media (max-width: 480px) {
+  nav .menu {
+      display: flex;
+  }
+
+  nav {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  nav ul {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      margin-bottom: 0.25rem;
+  }
+
+  nav ul.open {
+      display: flex;
+  }
+
+  nav ul li {
+      width: 100%;
+      text-align: center;
+  }
+
+  nav ul li a {
+      margin: 0.2rem 0.5rem;
+  }
+}
+.second-navbar {
+  margin-left:50px;
+  background-color: #333; /* Change the background color as needed */
+  /* padding: 10px; Adjust padding as needed */
+  height: 40px; /* Adjust height as needed */
+  margin-top: 60px;
+  position:fixed;
+  width:100%;
+  
+}
+
+.second-navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around; /* Adjust alignment as needed */
+}
+
+.second-navbar li {
+  margin-right: 20px;
+}
+
+.second-navbar a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 14px; /* Adjust font size as needed */
+}
+
+.second-navbar a:hover {
+  color: #ffd700;
+}
+
+
+
+
+
+/* Banner.css */
+
+.banner {
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block; /* Remove any default inline spacing */
+  margin: 0 auto; /* Center the image within its container */
+}
+/* Home.css */
+
+/* Hero Section */
+img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/* Mission Statement */
+h5 {
+  margin-top: 20px;
+}
+
+/* Featured Campaigns */
+/* Add styling for featured campaigns here */
+
+/* Testimonials or Success Stories */
+/* Add styling for success stories here */
+
+/* How It Works Section */
+/* Add styling for how it works section here */
+
+/* Impact Metrics */
+/* Add styling for impact metrics section here */
+
+/* Call-to-Action Buttons */
+Button {
+  margin-top: 20px;
+}
+
+/* Responsive Grid */
+@media (max-width: 600px) {
+  img {
+    margin-top: 20px;
+  }
+}
+
+/* Add more responsive styling as needed */
+
+/* Contact.css */
+
+/* .container {
+  margin-top: 100px;
+  margin-bottom: 100px; /* Adjust based on the height of your footer */
+*/
+
+.card {
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form > * {
+  margin-bottom: 20px;
+}
+
+
+/* Footer.css */
+
+/* App.css */
+/* ... Your existing styles ... */
+
+.footer {
+  background-color: #282c34;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-links {
+  margin-bottom: 20px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 14px;
+}
+
+.social-icons a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 20px;
+}
+
+/* Add more styles for social icons as needed */
+
+.copyright,
+.contact {
+  margin-top: 20px;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .footer-links,
+  .social-icons,
+  .copyright,
+  .contact {
+    margin-top: 10px;
+  }
+
+  .footer-links a,
+  .social-icons a {
+    font-size: 12px;
+  }
+}
+
+/* Font Styles */
+body {
+  font-family: var(--primary-font-family);
+}
+
+/* Root Variables */
+:root {
+  --primary-color: #01bfbd;
+  --primary-hover-color: #039b9a;
+  --green-color: #039695;
+  --primary-color-rgb: 1, 191, 189;
+  --primary-font-family: "Source Sans Pro", sans-serif;
+  --rboto-font-family: "Roboto", sans-serif;
+  --payment-sip-color: #039695;
+  --payment-sip-color-bg: 3, 150, 149;
+}
+
+/* Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #32323240;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  background-clip: padding-box;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #3232320d;
+}
+
+/* Slider Styles */
+.glide__slides {
+  position: relative;
+  width: 100%;
+  list-style: none;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  touch-action: pan-Y;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
+  will-change: transform;
+}
+
+.glide--swipeable {
+  cursor: grab;
+  cursor: -webkit-grab;
+}
+
+/* Accordion Styles */
+/* Add styles for your accordion here */
+
+/* General Styles */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/* Responsive Font Size */
+[_nghost-my-app-c72] {
+  font-size: 17px;
+}
+
+
+/* ContactButton.css */
+.contact-button {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  background-color: green;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  z-index: 5000;
+}
+
+.contact-button:hover {
+  background-color: #0056b3;
+}
+
+/* Accordian */
+.container1 {
+  width: 70vw;
+  max-width: var(--fixed-width);
+}
+.title1 {
+  margin-top: 100px;
+  margin-bottom: 2rem;
+  margin-left: 0px;
+}
+.underline1 {
+  height: 0.25rem;
+  width: 15rem;
+  background: var(--clr-primary-5);
+  margin-left: auto;
+  margin-right: auto;
+  color:#0056b3;
+}
+/* Success Stories */
+
+:root {
+  /* dark shades of primary color*/
+  --clr-primary-1: hsl(205, 86%, 17%);
+  --clr-primary-2: hsl(205, 77%, 27%);
+  --clr-primary-3: hsl(205, 72%, 37%);
+  --clr-primary-4: hsl(205, 63%, 48%);
+  /* primary/main color */
+  --clr-primary-5: hsl(205, 78%, 60%);
+  /* lighter shades of primary color */
+  --clr-primary-6: hsl(205, 89%, 70%);
+  --clr-primary-7: hsl(205, 90%, 76%);
+  --clr-primary-8: hsl(205, 86%, 81%);
+  --clr-primary-9: hsl(205, 90%, 88%);
+  --clr-primary-10: hsl(205, 100%, 96%);
+  /* darkest grey - used for headings */
+  --clr-grey-1: hsl(209, 61%, 16%);
+  --clr-grey-2: hsl(211, 39%, 23%);
+  --clr-grey-3: hsl(209, 34%, 30%);
+  --clr-grey-4: hsl(209, 28%, 39%);
+  /* grey used for paragraphs */
+  --clr-grey-5: hsl(210, 22%, 49%);
+  --clr-grey-6: hsl(209, 23%, 60%);
+  --clr-grey-7: hsl(211, 27%, 70%);
+  --clr-grey-8: hsl(210, 31%, 80%);
+  --clr-grey-9: hsl(212, 33%, 89%);
+  --clr-grey-10: hsl(210, 36%, 96%);
+  --clr-white: #fff;
+  --clr-red-dark: hsl(360, 67%, 44%);
+  --clr-red-light: hsl(360, 71%, 66%);
+  --clr-green-dark: hsl(125, 67%, 44%);
+  --clr-green-light: hsl(125, 71%, 66%);
+  --clr-black: #222;
+  --transition: all 0.3s linear;
+  --spacing: 0.1rem;
+  --radius: 0.25rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --max-width: 1170px;
+  --fixed-width: 620px;
+}
+/*
+=============== 
+Global Styles
+===============
+*/
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background: var(--clr-grey-10);
+  color: var(--clr-grey-1);
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+p {
+  margin-bottom: 1.25rem;
+  color: var(--clr-grey-5);
+}
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  body {
+    font-size: 1rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+}
+/*  global classes */
+
+/* section */
+.section {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: var(--max-width);
+}
+
+@media screen and (min-width: 992px) {
+  .section {
+    width: 95vw;
+  }
+}
+
+/*
+=============== 
+Reviews
+===============
+*/
+main {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+.title {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.underline {
+  height: 0.25rem;
+  width: 5rem;
+  background: var(--clr-primary-5);
+  margin-left: auto;
+  margin-right: auto;
+}
+/* .container {
+  width: 80vw;
+  max-width: var(--fixed-width);
+} */
+.review {
+  background: var(--clr-white);
+  padding: 1.5rem 2rem;
+  border-radius: var(--radius);
+  box-shadow: var(--light-shadow);
+  transition: var(--transition);
+  text-align: center;
+}
+.review:hover {
+  box-shadow: var(--dark-shadow);
+}
+.img-container {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+}
+.person-img {
+  width: 100%;
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  position: relative;
+}
+.quote-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  transform: translateY(25%);
+  background: var(--clr-primary-5);
+  color: var(--clr-white);
+}
+.img-container::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: var(--clr-primary-5);
+  position: absolute;
+  top: -0.25rem;
+  right: -0.5rem;
+  border-radius: 50%;
+}
+.author {
+  margin-bottom: 0.25rem;
+}
+.job {
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  color: var(--clr-primary-5);
+  font-size: 0.85rem;
+}
+.info {
+  margin-bottom: 0.75rem;
+}
+.prev-btn,
+.next-btn {
+  color: var(--clr-primary-7);
+  font-size: 1.25rem;
+  background: transparent;
+  border-color: transparent;
+  margin: 0 0.5rem;
+  transition: var(--transition);
+  cursor: pointer;
+}
+.prev-btn:hover,
+.next-btn:hover {
+  color: var(--clr-primary-5);
+}
+.random-btn {
+  margin-top: 0.5rem;
+  background: var(--clr-primary-10);
+  color: var(--clr-primary-5);
+  padding: 0.25rem 0.5rem;
+  text-transform: capitalize;
+  border-radius: var(--radius);
+  transition: var(--transition);
+  border-color: transparent;
+  cursor: pointer;
+}
+.random-btn:hover {
+  background: var(--clr-primary-5);
+  color: var(--clr-primary-1);
+}
+
+
+.icon{
+  font-size: 4rem;
+  color:rgb(0, 98, 255);
+}
+/* sidebar */
+
+.container2 {
+  width: 80vw;
+  max-width: var(--fixed-width);
+  margin-top: 30px;
+}
+.title2{
+  
+  text-align: center;
+  margin-bottom: 30px;
+  margin-left: 200px;
+
+}
+.underline2 {
+  height: 0.25rem;
+  width: 22rem;
+  background: var(--clr-primary-5);
+  margin-left: auto;
+  margin-right: auto;
+  color:#0056b3;
+}
+.title3{
+  margin-top: 90px;
+  text-align: center;
+  margin-bottom: 1px;
+  margin-left: 75px;
+}
+.underline3 {
+  height: 0.25rem;
+  width: 14rem;
+  background: var(--clr-primary-5);
+  margin-left: auto;
+  margin-right: auto;
+  color:#0056b3;
+}
